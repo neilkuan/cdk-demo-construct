@@ -2,17 +2,24 @@ const { AwsCdkConstructLibrary } = require('projen');
 const project = new AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.95.2',
+  description: 'A sample L3 CDK project',
+  cdkVersion: '1.128.0',
   defaultReleaseBranch: 'main',
-  name: 'demo-construct',
-  repositoryUrl: 'https://github.com/guan840912/demo-construct.git',
-
-  // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
-  // cdkTestDependencies: undefined,  /* AWS CDK modules required for testing. */
-  // deps: [],                        /* Runtime dependencies of this module. */
-  // description: undefined,          /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],                     /* Build dependencies for this module. */
-  // packageName: undefined,          /* The "name" in package.json. */
-  // release: undefined,              /* Add release management to this project. */
+  keywords: ['aws-cdk', 'custom', 'l3'],
+  name: 'cdk-demo-construct',
+  repositoryUrl: 'https://github.com/neilkuan/cdk-demo-construct.git',
+  cdkDependencies: [
+    '@aws-cdk/core',
+    '@aws-cdk/aws-ec2',
+    '@aws-cdk/aws-sns',
+    '@aws-cdk/aws-cloudwatch',
+    '@aws-cdk/aws-cloudwatch-actions',
+  ],
+  packageName: 'cdk-demo-construct',
+  publishToPypi: {
+    distName: 'cdk-demo-construct',
+    module: 'cdk_demo_construct',
+  },
+  gitignore: ['cdk.context', 'cdk.out'],
 });
 project.synth();
