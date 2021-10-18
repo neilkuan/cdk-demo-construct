@@ -20,6 +20,6 @@ const project = new AwsCdkConstructLibrary({
     distName: 'cdk-demo-construct',
     module: 'cdk_demo_construct',
   },
-  gitignore: ['cdk.context', 'cdk.out'],
+  gitignore: ['cdk.context.json', 'cdk.out'],
 });
 project.synth();
