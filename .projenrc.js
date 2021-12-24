@@ -21,5 +21,15 @@ const project = new AwsCdkConstructLibrary({
     module: 'cdk_demo_construct',
   },
   gitignore: ['cdk.context.json', 'cdk.out'],
+  depsUpgradeOptions: {
+    workflowOptions: {
+      labels: ['auto-approve'],
+      secret: 'AUTOMATION_GITHUB_TOKEN',
+    },
+  },
+  autoApproveOptions: {
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['neilkuan'],
+  },
 });
 project.synth();
