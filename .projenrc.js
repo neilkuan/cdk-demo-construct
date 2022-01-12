@@ -1,9 +1,9 @@
-const { AwsCdkConstructLibrary } = require('projen');
-const project = new AwsCdkConstructLibrary({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
   description: 'A sample L3 CDK project',
-  cdkVersion: '1.128.0',
+  cdkVersion: '1.139.0',
   defaultReleaseBranch: 'main',
   keywords: ['aws-cdk', 'custom', 'l3'],
   name: 'cdk-demo-construct',
@@ -24,7 +24,6 @@ const project = new AwsCdkConstructLibrary({
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve'],
-      secret: 'AUTOMATION_GITHUB_TOKEN',
     },
   },
   autoApproveOptions: {
