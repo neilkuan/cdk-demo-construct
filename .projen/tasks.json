@@ -264,25 +264,25 @@
       },
       "steps": [
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='@types/prettier,typescript,projen'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='@types/prettier,typescript,projen'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='@types/prettier,typescript,projen'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='@types/prettier,typescript,projen'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='projen'"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='@types/prettier,typescript,projen'"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen jsii-pacmak json-schema npm-check-updates standard-version ts-jest typescript @aws-cdk/aws-cloudwatch-actions @aws-cdk/aws-cloudwatch @aws-cdk/aws-ec2 @aws-cdk/aws-sns @aws-cdk/core constructs @aws-cdk/aws-cloudwatch-actions @aws-cdk/aws-cloudwatch @aws-cdk/aws-ec2 @aws-cdk/aws-sns @aws-cdk/core @aws-cdk/assert @aws-cdk/assertions"
+          "exec": "yarn upgrade @types/jest @types/node @types/prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen jsii-pacmak json-schema npm-check-updates standard-version ts-jest typescript @aws-cdk/aws-cloudwatch-actions @aws-cdk/aws-cloudwatch @aws-cdk/aws-ec2 @aws-cdk/aws-sns @aws-cdk/core constructs @aws-cdk/aws-cloudwatch-actions @aws-cdk/aws-cloudwatch @aws-cdk/aws-ec2 @aws-cdk/aws-sns @aws-cdk/core @aws-cdk/assert @aws-cdk/assertions"
         },
         {
           "exec": "npx projen"
