@@ -2053,9 +2053,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.3.69:
-  version "3.4.154"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.154.tgz#476c52e05732aec53d53990e979e0cb44fdf448e"
-  integrity sha512-9A+TAilHLqyk2sPh09XkNuXX6K+alsfcOcxPINd5Vyzzh6vqzUvgrlTF0kOwXEJUlZBEdAYDiScVTpd3q6EFwA==
+  version "3.4.155"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.155.tgz#fa683f37d704cb1255b13dd8f5a8bda5f1486bf8"
+  integrity sha512-T1wzP+6ppBAq1aBzw8HWX6XNvvkDy76/3JaQVGK/71w0w1/TRZVSzHHMXVQ2dOlO5ZzVjRRs+6yX1IIV22OSeA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -3937,9 +3937,9 @@ jest-mock@^27.5.1:
     "@types/node" "*"
 
 jest-pnp-resolver@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz#b704ac0ae028a89108a4d040b3f919dfddc8e33c"
-  integrity sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TCARAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.3.tgz#930b1546164d4ad5937d5540e711d4d38d4cad2e"
+  integrity sha512-+3NpwQEnRoIBtx4fyhblQDPgJI0H1IEIkX7ShLUjPGA7TtUTvI1oiKi3SR4oBR0hQhQR80l4WAe5RrXBwWMA8w==
 
 jest-regex-util@^27.5.1:
   version "27.5.1"
